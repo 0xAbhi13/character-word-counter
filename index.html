@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character &amp; Word Counter</title>
+  <meta name="description" content="A live text analyzer that counts characters, words, sentences, paragraphs and estimates reading time. Built with HTML5, CSS3, and vanilla JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel" aria-labelledby="pageTitle">
+      <!-- Header -->
+      <header class="panel__header">
+        <div class="brand">
+          <span class="brand__icon" aria-hidden="true">
+            <!-- Text-processing icon: document with text lines -->
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="8" y1="12" x2="16" y2="12" />
+              <line x1="8" y1="16" x2="13" y2="16" />
+            </svg>
+          </span>
+          <p class="eyebrow">Veda Technology Internship</p>
+        </div>
+        <h1 id="pageTitle" class="title">Character &amp; Word Counter</h1>
+        <p class="subtitle">Analyze your text instantly &mdash; characters, words, sentences, paragraphs and reading time, live as you type.</p>
+
+        <div class="live-status" role="status" aria-live="polite">
+          <span class="live-status__dot" aria-hidden="true"></span>
+          <span class="live-status__text">Live analysis active</span>
+        </div>
+      </header>
+
+      <!-- Editor -->
+      <div class="editor" role="group" aria-labelledby="editorLabel">
+        <label id="editorLabel" for="editor" class="editor__label">Text editor</label>
+        <textarea
+          id="editor"
+          class="editor__field"
+          placeholder="Start typing or paste your text here..."
+          aria-describedby="emptyState"
+          spellcheck="true"
+        ></textarea>
+        <p id="emptyState" class="empty-state" role="status" aria-live="polite">
+          The editor is empty. Type or paste text to begin live analysis.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" aria-labelledby="statsHeading">
+        <h2 id="statsHeading" class="sr-only">Text statistics</h2>
+        <div class="stat">
+          <span class="stat__value" id="charCount">0</span>
+          <span class="stat__label">Characters</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="wordCount">0</span>
+          <span class="stat__label">Words</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="sentenceCount">0</span>
+          <span class="stat__label">Sentences</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="charNoSpaceCount">0</span>
+          <span class="stat__label">Chars (no spaces)</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="paragraphCount">0</span>
+          <span class="stat__label">Paragraphs</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" id="readingTime">0 min</span>
+          <span class="stat__label">Reading time</span>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions" role="group" aria-labelledby="actionsLabel">
+        <p id="actionsLabel" class="sr-only">Editor actions</p>
+        <button type="button" id="clearBtn" class="btn btn--ghost">Clear</button>
+        <button type="button" id="copyBtn" class="btn btn--ghost">Copy Text</button>
+        <button type="button" id="sampleBtn" class="btn btn--primary">Sample Text</button>
+        <button type="button" id="selectAllBtn" class="btn btn--ghost">Select All</button>
+      </div>
+
+      <p id="statusMsg" class="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">Built by Abhishek Jadhav | Veda Technology Internship &mdash; Day 18/45</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

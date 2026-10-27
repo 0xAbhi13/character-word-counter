@@ -1,5 +1,3 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563eb,100:f97316&height=170&section=header&text=Character%20%26%20Word%20Counter&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Abhishek%20Jadhav%20%7C%20Veda%20Technology%20Internship%20Day%2018&descAlignY=62&descSize=17" alt="Character and Word Counter header" />
 
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=2563eb&center=true&vCenter=true&width=760&lines=Veda+Technology+Internship+%E2%80%A2+Day+18;HTML5+%E2%80%A2+CSS3+%E2%80%A2+Vanilla+JavaScript;Live+Text+Analysis+%E2%80%A2+input+event" alt="Typing introduction" />
 
@@ -15,9 +13,6 @@
 
 ---
 
-Character &amp; Word Counter by **Abhishek Jadhav** &mdash; Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: a live text analyzer that counts characters, words, sentences, characters without spaces, and paragraphs, and estimates reading time. No frameworks, no build step, no backend.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** &mdash; Day 18: Character and Word Counter.
 
 ## Features
 
@@ -79,34 +74,3 @@ internship-task-18/
 2. No build step, no server, no dependencies.
 3. Resize the window or use DevTools device mode to test desktop, tablet, and mobile widths.
 
-## Testing Checklist
-
-- [x] Empty input: all counts are zero.
-- [x] Input `Hello world`: 11 characters and 2 words.
-- [x] Input `  Hello   world  `: 17 characters and 2 words.
-- [x] Multiple lines: words and paragraphs counted correctly.
-- [x] Punctuation: sentence counts sensible.
-- [x] Emojis and special characters: consistent code-point counting, documented.
-- [x] Clear button resets editor and statistics.
-- [x] Sample text button inserts sample and refreshes statistics.
-- [x] Copy button copies correct text and handles clipboard errors.
-- [x] Responsive layout verified at mobile and desktop widths.
-- [x] No console errors during normal use.
-
-## Limitations
-
-- Sentence counting is punctuation-based and cannot detect abbreviations or decimal points perfectly.
-- Paragraph counting treats blank-line-separated blocks as paragraphs.
-- Reading time is an estimate based on 200 words per minute.
-- Complex emojis may count as multiple characters (code points).
-
-## Git Commands
-
-```bash
-git init
-git add .
-git commit -m "Add Day 18 Character and Word Counter"
-git branch -M main
-git remote add origin https://github.com/0xAbhi13/character-word-counter.git
-git push -u origin main
-```

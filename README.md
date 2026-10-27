@@ -1,4 +1,4 @@
-
+<div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=2563eb&center=true&vCenter=true&width=760&lines=Veda+Technology+Internship+%E2%80%A2+Day+18;HTML5+%E2%80%A2+CSS3+%E2%80%A2+Vanilla+JavaScript;Live+Text+Analysis+%E2%80%A2+input+event" alt="Typing introduction" />
 
   <p><b>Light Theme &#183; Navy &amp; Orange Accents &#183; Responsive &#183; Accessible</b></p>
